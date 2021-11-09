@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <!-- Divs are block level elements -->
+    <!-- They don't allow other elements to be displayed side by side with them -->
+    <form>
+        <div>
+            <label for="first-name">First Name: * </label>
+            <!-- input elements do not require a closing tag -->
+            <input type="text" name="first-name" id="first-name">
+        </div>
+        <div>
+            <label for="last-name">Last Name: * </label>
+            <!-- input elements do not require a closing tag -->
+            <input type="text" name="last-name" id="last-name">
+        </div>
+        <div>
+            <label for="email_address">Email Address: * </label>
+            <!-- input elements do not require a closing tag -->
+            <input type="email" name="email_address" id="email_address">
+        </div>
+        <div>
+            <label for="password">Password: * </label>
+            <!-- input elements do not require a closing tag -->
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password: * </label>
+            <!-- input elements do not require a closing tag -->
+            <input type="password" name="confirm_password" id="confirm_password">
+        </div>
+        <div>
+            <label for="birthday">Birthday: </label>
+            <!-- inout elements do not require a closing tag -->
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <p>Gender Identity</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Non-Binary" id="Non-Binary" value="Non-Binary">
+            <label for="Non-Binary">Non-Binary</label>
+            <input type="radio" name="prefer-not-to-answer" id="prefer-not-to-answer" value="prefer-not-to-answer">
+            <label for="prefer-not-to-answer">I prefer not to answer</label>
+        </div>
+        <div>
+            <p>A short description about myself:<p></p>
+            <textarea name="description" rows="10" cols="40">
+            </textarea>
+        </div>
+        <div>
+            <label for="language">Favorite Language: </label>
+            <select id="language" name="language">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="updates">
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+            
+        </div>
+        <input type="submit" value="Create Account">
+        <p>*Indicates a required field</p>
+    </form>
+    
+</body>
+</html>
